@@ -10,7 +10,7 @@ body{
 	background-color:#f0f0f1;
 }
 
-.webgl-content,#unity-loading-bar,#errorBrowserBlock{
+.webgl-content,#loadingBlock,#errorBrowserBlock{
 	padding:0px;
 	position:absolute;
 	height:100vh;
@@ -18,14 +18,14 @@ body{
 	background-color:#f0f0f1;
 }
 
-#unity-container,unity-canvas{
+#gameContainer,canvas{
 	position:absolute;
 	height:100%;
 	width:100%;
 	background-color:#f0f0f1;
 }
 
-#unity-fullscreen-button{
+#fullScreenButton{
 	height:50px;
 	width:50px;
 	position:absolute;
@@ -61,12 +61,12 @@ body{
 	margin-top:2vh;
 }
 
-#unity-loading-bar,#errorBrowserBlock{
+#loadingBlock,#errorBrowserBlock{
 	background-image:url("../img/background.png");
 	background-size:cover;
 }
 
-#unity-progress-bar-empty{
+#emptyBar{
 	background: url("../img/progressEmpty.png") no-repeat right;
 	float: right; 
 	width: 60%; 
@@ -74,7 +74,7 @@ body{
 	display: inline-block;
 }
 
-#unity-progress-bar-full{
+#fullBar{
 	background: url("../img/progressFull.png") no-repeat right;
 	float: left; 
 	width: 40%; 
@@ -121,6 +121,7 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 }
+
 
 /* When aspect-ratio is smaller than 4/3*/
 

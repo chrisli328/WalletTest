@@ -15,17 +15,17 @@
 <body>
   
 	<div class="keepRatio">
-		<div id="gameContainer" class="unity-desktop webgl-content">
-			<button id="fullScreenButton" onclick="ToggleFullScreen()"></button>
-			<canvas id="gameCanvas"></canvas>
-			<div id="loadingBlock">
+		<div id="unity-container" class="unity-desktop webgl-content">
+			<button id="unity-fullscreen-button" onclick="ToggleFullScreen()"></button>
+			<canvas id="unity-canvas"></canvas>
+			<div id="unity-loading-bar">
 				<img class="logo" src="TemplateData/img/Logo.png"></img>
 			
 				<div id="progressBar">
 					<div>LOADING ...</div>
 					<div class="centered">
-						<div id="emptyBar"></div>
-						<div id="fullBar"></div>
+						<div id="unity-progress-bar-empty"></div>
+						<div id="unity-progress-bar-full"></div>
 					</div>
 				</div>
 				
@@ -76,7 +76,7 @@
 			var element = document.body.getElementsByClassName("webgl-content")[0];
 			
 			if (!isInFullScreen) {
-				document.getElementById("fullScreenButton").style.backgroundImage="url('TemplateData/img/fullScreen_off.png')";
+				document.getElementById("unity-fullscreen-button").style.backgroundImage="url('TemplateData/img/fullScreen_off.png')";
 				if (element.webkitRequestFullscreen) {
 					element.webkitRequestFullscreen();
 				} else if (element.msRequestFullscreen) { 
@@ -86,7 +86,7 @@
 				} 
 			}
 			else {
-				document.getElementById("fullScreenButton").style.backgroundImage="url('TemplateData/img/fullScreen_on.png')";
+				document.getElementById("unity-fullscreen-button").style.backgroundImage="url('TemplateData/img/fullScreen_on.png')";
 				if (document.exitFullscreen) {
 					document.exitFullscreen();
 				} else if (document.webkitExitFullscreen) { //Chrome, Safari and Opera
@@ -149,12 +149,12 @@
         productVersion: "0.1",
       };
 
-		var container = document.querySelector("#gameContainer");
-		var canvas = document.querySelector("#gameCanvas");
-		var loadingBar = document.querySelector("#loadingBlock");
-		var progressBarFull = document.querySelector("#fullBar");
-		var progressBarEmpty = document.querySelector("#emptyBar");
-		var fullscreenButton = document.querySelector("#fullScreenButton");
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      var mobileWarning = document.querySelector("#unity-mobile-warning");
 
 		if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 			container.className = "unity-mobile";

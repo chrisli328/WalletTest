@@ -10,7 +10,7 @@ body{
 	background-color:#f0f0f1;
 }
 
-.webgl-content,#loadingBlock,#errorBrowserBlock{
+.webgl-content,#unity-loading-bar,#errorBrowserBlock{
 	padding:0px;
 	position:absolute;
 	height:100vh;
@@ -18,14 +18,14 @@ body{
 	background-color:#f0f0f1;
 }
 
-#gameContainer,canvas{
+#unity-container,unity-canvas{
 	position:absolute;
 	height:100%;
 	width:100%;
 	background-color:#f0f0f1;
 }
 
-#fullScreenButton{
+#unity-fullscreen-button{
 	height:50px;
 	width:50px;
 	position:absolute;
@@ -61,12 +61,12 @@ body{
 	margin-top:2vh;
 }
 
-#loadingBlock,#errorBrowserBlock{
+#unity-loading-bar,#errorBrowserBlock{
 	background-image:url("../img/background.png");
 	background-size:cover;
 }
 
-#emptyBar{
+#unity-progress-bar-empty{
 	background: url("../img/progressEmpty.png") no-repeat right;
 	float: right; 
 	width: 60%; 
@@ -74,7 +74,7 @@ body{
 	display: inline-block;
 }
 
-#fullBar{
+#unity-progress-bar-full{
 	background: url("../img/progressFull.png") no-repeat right;
 	float: left; 
 	width: 40%; 
@@ -121,24 +121,6 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 }
-
-body { padding: 0; margin: 0 }
-#unity-container { position: absolute }
-#unity-container.unity-desktop { left: 50%; top: 50%; transform: translate(-50%, -50%) }
-#unity-container.unity-mobile { width: 100%; height: 100% }
-#unity-canvas { background: #231F20 }
-.unity-mobile #unity-canvas { width: 100%; height: 100% }
-#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
-#unity-logo { width: 154px; height: 130px; background: url('unity-logo-dark.png') no-repeat center }
-#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; background: url('progress-bar-empty-dark.png') no-repeat center }
-#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
-#unity-footer { position: relative }
-.unity-mobile #unity-footer { display: none }
-#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
-#unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
-#unity-mobile-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
-
 
 /* When aspect-ratio is smaller than 4/3*/
 

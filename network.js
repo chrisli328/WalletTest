@@ -17,4 +17,4 @@ Used to set the network
 */
 
 window.web3NetworkId = 97;
-window.web3NetworkName = "inance Smart Chain Testnet"
+window.web3NetworkName = "Binance Smart Chain Testnet"

@@ -54,11 +54,11 @@ body{
 }
 
 .logo{
-	height:40vh;
+	height:60vh;
 	width:auto;
 	display: block;
 	margin:auto;
-	margin-top:15vh;
+	margin-top:20vh;
 }
 
 #loadingBlock,#errorBrowserBlock{
@@ -75,18 +75,27 @@ body{
 }
 
 #fullBar{
-	background: url("../img/progressFull.png") no-repeat right;
+	background: url("../img/progressFull.png") no-repeat left;
 	float: left; 
 	width: 40%; 
 	height: 100%; 
 	display: inline-block;
 }
 
-#progressBar,#warningBrowserBlock,#warningMobileBlock,#errorContent{
+#warningBrowserBlock,#warningMobileBlock,#errorContent{
 	height:25vh;
 	width:40vw;
 	margin:auto;
 	text-align: center;
+}
+#progressBar{
+	height:10px;
+	width:360px;
+	margin:auto;
+	margin-top:-28vh;
+	text-align: center;
+	position: relative;
+	z-index: 1;
 }
 
 #progressBar{

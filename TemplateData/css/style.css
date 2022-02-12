@@ -62,7 +62,7 @@ body{
 }
 
 #loadingBlock,#errorBrowserBlock{
-	background-image:url("../img/background.png");
+	background-image:url("../img/background.jpg");
 	background-size:cover;
 }
 
